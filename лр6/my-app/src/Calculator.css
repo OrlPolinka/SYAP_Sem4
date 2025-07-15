@@ -1,0 +1,192 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Темная тема */
+  .dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark .calculator {
+    background-color: #444;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dark .display {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .dark .keypad button {
+    background-color: #666;
+    color: #fff;
+  }
+  
+  .dark .keypad button:hover {
+    background-color: #555;
+  }
+  
+  /* Светлая тема */
+  .light {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .light .calculator {
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .light .display {
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .light .keypad button {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .light .keypad button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Стили калькулятора */
+  .calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .calculator {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Кнопка смены темы */
+  .theme-toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  .theme-toggle-button {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    transition: background-color 0.2s;
+  }
+  
+  .theme-toggle-button:hover {
+    background-color: #ddd;
+  }
+  
+  .display {
+    text-align: right;
+    font-size: 2rem;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .result {
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  .history {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: #718096;
+  }
+  
+  .history ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .history li {
+    padding: 5px 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  /* Стили клавиш */
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .keypad button {
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .keypad button:hover {
+    background-color: #ddd;
+  }
+  
+  .keypad button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Особенности кнопок */
+  .keypad button.operator {
+    background-color: #00b3ff;
+    color: white;
+  }
+  
+  .keypad button.operator:hover {
+    background-color: #00b3ff;
+  }
+  
+  .keypad button.equals {
+    background-color: #069d06;
+    color: white;
+  }
+  
+  .keypad button.equals:hover {
+    background-color: #069d06;
+  }
+  
+  .keypad button.clear {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .keypad button.clear:hover {
+    background-color: #e53935;
+  }
+  

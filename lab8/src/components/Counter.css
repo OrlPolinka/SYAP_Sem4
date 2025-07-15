@@ -1,0 +1,28 @@
+.d1{
+    width: 250px;
+  height: 190px;
+  background-color: black;
+  outline: 1px solid aqua;
+  border-radius: 15px;
+  padding: 70px;
+  margin-left: 500px;
+  text-align: center;
+
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+  }
+
+  
+button{
+    background-color:aqua;
+    color: black;
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 10px;
+  }
